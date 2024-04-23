@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to left, #8f3737, #b65757,#8f3737) ;
+}
+
+header{
+    background: #2d2a37;
+    width: 356px;
+    height: 545px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: #000000 solid 2px;
+    margin: 50px;   
+}
+
+.align{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin: 0 15px;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "c1" "c2" "c3" "c4";    
+}
+
+.input div{
+    background-color: #383737ba;
+    padding:15px;
+    border-radius: 10px;
+    color: #7f7c7c;
+    font-size: 10px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+button{
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #2c2c2c;
+    border: solid 1px #1e1e1eae;
+    padding: 10px;
+    text-align:center;
+    font-size: 25px;
+    color: #dcd8d8;
+    margin: 5px;
+    box-shadow: #2d2a37;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 5px 10px 25px #aeababfb ;
+}
+
+
+button:hover{
+    transform: scale(0.99);
+    opacity: 0.8;
+    color: #aa2c2c;
+    cursor: pointer;
+}
+
+.coluna1 button,.coluna2 button,.coluna3 button{
+    background-color: #383838d1;
+}
+
+.coluna1 :nth-child(1){
+    font-size: 30px;
+}
+
+.coluna1 :nth-child(5){
+    font-size: 25px;
+}
+
+.coluna4 button{
+    grid-area: "c4";
+    background-color: #611212;
+    color: #ffffff;
+}
+
+.coluna4 :nth-child(5){
+    background-color: #aa2c2c;
+
+} 
+
+.coluna1 :nth-child(1){
+    font-size: 20px;
+}
+
+.input :nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.input :nth-child(2){
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #373636ba;
+    padding: 10px 6px;
+}
+
+.igual{
+    color: #7f7c7c;
+    font-size: 30px;
+    padding: 10px;
+}
